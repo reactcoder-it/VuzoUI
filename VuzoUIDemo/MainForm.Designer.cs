@@ -40,6 +40,9 @@ namespace VuzoUIDemo
 			this.myButton4 = new VuzoUI.Controls.MyButton();
 			this.myButton5 = new VuzoUI.Controls.MyButton();
 			this.myButton6 = new VuzoUI.Controls.MyButton();
+			this.myButton7 = new VuzoUI.Controls.MyButton();
+			this.myButton8 = new VuzoUI.Controls.MyButton();
+			this.myButton9 = new VuzoUI.Controls.MyButton();
 			this.SuspendLayout();
 			// 
 			// myButton1
@@ -114,11 +117,59 @@ namespace VuzoUIDemo
 			this.myButton6.TextColor = System.Drawing.Color.Black;
 			this.myButton6.UseVisualStyleBackColor = true;
 			// 
+			// myButton7
+			// 
+			this.myButton7.BGGradBot = System.Drawing.Color.CornflowerBlue;
+			this.myButton7.BGGradTop = System.Drawing.Color.LightSteelBlue;
+			this.myButton7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+			this.myButton7.Location = new System.Drawing.Point(488, 296);
+			this.myButton7.Name = "myButton7";
+			this.myButton7.OutLine = System.Drawing.Color.FromArgb(((int)(((byte)(112)))), ((int)(((byte)(112)))), ((int)(((byte)(112)))));
+			this.myButton7.Rounded = 7F;
+			this.myButton7.Size = new System.Drawing.Size(75, 32);
+			this.myButton7.TabIndex = 8;
+			this.myButton7.Text = "Сохранить";
+			this.myButton7.TextColor = System.Drawing.Color.Black;
+			this.myButton7.UseVisualStyleBackColor = true;
+			// 
+			// myButton8
+			// 
+			this.myButton8.BGGradBot = System.Drawing.Color.CornflowerBlue;
+			this.myButton8.BGGradTop = System.Drawing.Color.LightSteelBlue;
+			this.myButton8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+			this.myButton8.Location = new System.Drawing.Point(400, 296);
+			this.myButton8.Name = "myButton8";
+			this.myButton8.OutLine = System.Drawing.Color.FromArgb(((int)(((byte)(112)))), ((int)(((byte)(112)))), ((int)(((byte)(112)))));
+			this.myButton8.Rounded = 7F;
+			this.myButton8.Size = new System.Drawing.Size(75, 32);
+			this.myButton8.TabIndex = 7;
+			this.myButton8.Text = "Отмена";
+			this.myButton8.TextColor = System.Drawing.Color.Black;
+			this.myButton8.UseVisualStyleBackColor = true;
+			// 
+			// myButton9
+			// 
+			this.myButton9.BGGradBot = System.Drawing.Color.CornflowerBlue;
+			this.myButton9.BGGradTop = System.Drawing.Color.LightSteelBlue;
+			this.myButton9.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+			this.myButton9.Location = new System.Drawing.Point(312, 296);
+			this.myButton9.Name = "myButton9";
+			this.myButton9.OutLine = System.Drawing.Color.FromArgb(((int)(((byte)(112)))), ((int)(((byte)(112)))), ((int)(((byte)(112)))));
+			this.myButton9.Rounded = 7F;
+			this.myButton9.Size = new System.Drawing.Size(75, 32);
+			this.myButton9.TabIndex = 6;
+			this.myButton9.Text = "OK";
+			this.myButton9.TextColor = System.Drawing.Color.Black;
+			this.myButton9.UseVisualStyleBackColor = true;
+			// 
 			// MainForm
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.ClientSize = new System.Drawing.Size(576, 344);
+			this.Controls.Add(this.myButton7);
+			this.Controls.Add(this.myButton8);
+			this.Controls.Add(this.myButton9);
 			this.Controls.Add(this.myButton4);
 			this.Controls.Add(this.myButton5);
 			this.Controls.Add(this.myButton6);
@@ -129,6 +180,9 @@ namespace VuzoUIDemo
 			this.Text = "VuzoUIDemo";
 			this.ResumeLayout(false);
 		}
+		private VuzoUI.Controls.MyButton myButton9;
+		private VuzoUI.Controls.MyButton myButton8;
+		private VuzoUI.Controls.MyButton myButton7;
 		private VuzoUI.Controls.MyButton myButton6;
 		private VuzoUI.Controls.MyButton myButton5;
 		private VuzoUI.Controls.MyButton myButton4;
