@@ -23,6 +23,7 @@ namespace VuzoUI.Controls
 		internal Color _bgGradBot;
 		internal Color _textColor;
 		internal Color _outLine;
+		internal float _rounded;
 		
 		bool _inOnPaint = false;
 		
@@ -42,12 +43,17 @@ namespace VuzoUI.Controls
 		[DefaultValue(typeof(Color), "0x79, 0x94, 0x29")]
 		public Color OutLine { get { return _outLine; } set { _outLine = value; } }
 		
+		[Browsable(true), Category("Colors")]
+		[DefaultValue(typeof(float), "5.0f")]
+		public float Rounded { get { return _rounded; } set { _rounded = value; } }
+		
 		public MyButton()
 		{
 			_bgGradTop = Color.FromArgb(0x94, 0xc1, 0x1f);
 			_bgGradBot = Color.FromArgb(0xcd, 0xe2, 0x96);
 			_textColor = Color.FromArgb(0x40, 0x57, 0x04);
 			_outLine = Color.FromArgb(0x79, 0x94, 0x29);
+			_rounded = 5.0f;
 		}
 		
 		protected override void OnPaint(PaintEventArgs pevent)
@@ -69,7 +75,7 @@ namespace VuzoUI.Controls
 				Pen myPen = new Pen(OutLine, 1);
 				GraphicsPath path = new GraphicsPath();
 				
-				float wid = 1.0f;
+				float wid = _rounded;
 				int width = this.Width - 1;
 				int height = this.Height - 1;
 				
