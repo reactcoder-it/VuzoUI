@@ -121,6 +121,7 @@ namespace VuzoUIDemo
 			// 
 			this.myButton7.BGGradBot = System.Drawing.Color.CornflowerBlue;
 			this.myButton7.BGGradTop = System.Drawing.Color.LightSteelBlue;
+			this.myButton7.Enabled = false;
 			this.myButton7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
 			this.myButton7.Location = new System.Drawing.Point(488, 296);
 			this.myButton7.Name = "myButton7";
